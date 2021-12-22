@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.sql.Date;
 
 @Entity
 @Data
@@ -19,11 +20,10 @@ public class Category {
     private Long catId;
     private Long societyId;
     private String name;
-    private Long ConnectionFee;
+    private Double ConnectionFee;
     private String description;
 
-    private String createdDate;
-
+    private Date createdDate;
 
 
 }

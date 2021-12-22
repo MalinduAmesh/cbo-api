@@ -16,8 +16,8 @@ import javax.persistence.Id;
 public class PostOffice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long postOfficeID;
-    private Long societyID;
+    private Long postOfficeId;
+    private Long societyId;
     private String name;
     private Long postalCode;
 }

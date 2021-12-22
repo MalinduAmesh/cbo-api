@@ -16,7 +16,7 @@ import javax.persistence.Id;
 public class UserPermission {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long roleID;
+    private Long roleId;
     private Long roleName;
     private boolean addNewProject;
     private boolean viewReport;
@@ -25,7 +25,7 @@ public class UserPermission {
     private boolean changeAccountBalance;
     private boolean transactionPasswordChange;
     private boolean passwordChangeOwn;
-    private boolean setNewPannel;
+    private boolean setNewPanel;
     private boolean addNewConsumer;
     private boolean addCustomerBulk;
     private boolean addProductBulk;

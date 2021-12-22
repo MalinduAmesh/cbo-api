@@ -49,11 +49,11 @@ public class CboApiApplication {
 			userService.saveRole(new Role(null,"ROLE_ADMIN"));
 			userService.saveRole(new Role(null,"ROLE_SUPER_ADMIN"));
 
-			userService.saveUser(new User(null,"Malinud Amesh","Malindu","1234",new ArrayList<>()));
-			userService.saveUser(new User(null,"Gathsara Umesh","Gathsara","1234",new ArrayList<>()));
-			userService.saveUser(new User(null,"Udara Janith","Udara","1234",new ArrayList<>()));
-			userService.saveUser(new User(null,"Lochana Thiwanka","Lochana","1234",new ArrayList<>()));
-			userService.saveUser(new User(null,"Bashana Sadanjana","Bashana","1234",new ArrayList<>()));
+			userService.saveUser(new User(null,"Malinud Amesh","Malindu","1234", 1L,new ArrayList<>()));
+			userService.saveUser(new User(null,"Gathsara Umesh","Gathsara","1234",1L,new ArrayList<>()));
+			userService.saveUser(new User(null,"Udara Janith","Udara","1234",1L,new ArrayList<>()));
+			userService.saveUser(new User(null,"Lochana Thiwanka","Lochana","1234",1L,new ArrayList<>()));
+			userService.saveUser(new User(null,"Bashana Sadanjana","Bashana","1234",1L,new ArrayList<>()));
 
 			userService.addRoleToUser("Malindu","ROLE_SUPER_ADMIN");
 			userService.addRoleToUser("Bashana","ROLE_ADMIN");

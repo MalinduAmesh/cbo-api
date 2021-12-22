@@ -16,8 +16,8 @@ import javax.persistence.Id;
 public class Gadivision {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long gadivisionID;
-    private Long societyID;
+    private Long gadivisionId;
+    private Long societyId;
     private String name;
     private Long code;
     private String description;

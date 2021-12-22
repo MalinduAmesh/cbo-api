@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import java.sql.Date;
 
 @Data
 @NoArgsConstructor
@@ -17,16 +14,16 @@ public class ConsumerDto {
     private Long consumerId;
     private Long societyId;
     private String nic;
-    private Long initials;
+    private String initials;
     private String firstName;
     private String lastName;
-    private String dob;
+    private Date dob;
 
     private String profileImages;
     private String nicFront;
     private String nicBack;
     private String signature;
 
-    private String createdDate;
+    private Date createdDate;
 
 }

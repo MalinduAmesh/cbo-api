@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.sql.Date;
 
 @Entity
 @Data
@@ -18,5 +19,5 @@ public class Debit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long debitId;
 
-    private String createdDate;
+    private Date createdDate;
 }

@@ -18,12 +18,12 @@ public class DebitDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long debitDetId;
     private Long debitId;
-    private Long totalAmount;
-    private Long basicAmount;
-    private Long totalInstallments;
-    private Long paidInstallments;
-    private Long amountPerInstallments;
-    private Long remainingInstallments;
-    private Long remainingAmount;
+    private Double totalAmount;
+    private Double basicAmount;
+    private Double totalInstallments;
+    private Double paidInstallments;
+    private Double amountPerInstallments;
+    private Double remainingInstallments;
+    private Double remainingAmount;
 
 }

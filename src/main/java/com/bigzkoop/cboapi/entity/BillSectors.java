@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.sql.Date;
 
 @Entity
 @Data
@@ -21,6 +22,6 @@ public class BillSectors {
     private String name;
     private String description;
 
-    private String createdDate;
+    private Date createdDate;
 
 }

@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.sql.Date;
 
 @Entity
 @Data
@@ -19,9 +20,9 @@ public class Division {
     private Long divisionId;
     private Long societyId;
     private Long cityId;
-    private Long areaName;
-    private Long description;
+    private String areaName;
+    private String description;
 
-    private Long createdDate;
+    private Date createdDate;
 
 }

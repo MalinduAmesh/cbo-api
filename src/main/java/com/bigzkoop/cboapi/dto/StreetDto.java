@@ -4,20 +4,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import java.sql.Date;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class StreetDto {
-    private Long streetID;
-    private Long societyID;
+    private Long streetId;
+    private Long societyId;
     private String streetName;
-    private Long cityID;
-    private Long divisionID;
+    private Long cityId;
+    private Long divisionId;
 
-    private Long CreatedDate;
+    private Date CreatedDate;
 }

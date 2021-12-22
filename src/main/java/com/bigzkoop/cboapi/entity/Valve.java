@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.sql.Date;
 
 @Entity
 @Data
@@ -16,10 +17,10 @@ import javax.persistence.Id;
 public class Valve {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long valveID;
-    private Long societyID;
+    private Long valveId;
+    private Long societyId;
     private String name;
     private String description;
 
-    private String createdDate;
+    private Date createdDate;
 }

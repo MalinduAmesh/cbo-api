@@ -2,7 +2,6 @@ package com.bigzkoop.cboapi.service.impl;
 
 import com.bigzkoop.cboapi.dto.ConsumerDto;
 import com.bigzkoop.cboapi.entity.Consumer;
-import com.bigzkoop.cboapi.entity.Sync;
 import com.bigzkoop.cboapi.repository.ConsumerRepository;
 import com.bigzkoop.cboapi.service.ConsumerService;
 import lombok.RequiredArgsConstructor;
@@ -23,7 +22,7 @@ public class ConsumerServiceImpl implements ConsumerService {
         if (consumerRepository.existsById(consumerDto.getSocietyId())){
             System.out.println("User Already in system");
         }
-        Consumer map = modelMapper.map(consumerDto,Consumer.class);
+        Consumer map = modelMapper.map(consumerDto, Consumer.class);
         consumerRepository.save(map);
         return true;
     }

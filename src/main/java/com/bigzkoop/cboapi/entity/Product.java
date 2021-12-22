@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.sql.Date;
 
 @Entity
 @Data
@@ -16,10 +17,10 @@ import javax.persistence.Id;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long prodID;
-    private Long societyID;
+    private Long prodId;
+    private Long societyId;
     private Long prodCode;
     private String description;
     private String productType;
-    private String  createdDate;
+    private Date createdDate;
 }

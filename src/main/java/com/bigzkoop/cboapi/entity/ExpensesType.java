@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.sql.Date;
 
 @Entity
 @Data
@@ -17,7 +18,7 @@ public class ExpensesType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long expTypeId;
-    private Long name;
-    private Long description;
-    private Long createdDate;
+    private String name;
+    private String description;
+    private Date createdDate;
 }
