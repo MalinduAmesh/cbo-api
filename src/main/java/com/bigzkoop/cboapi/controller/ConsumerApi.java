@@ -17,7 +17,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @RestController
-@RequestMapping("/api/v1/consumer")
+@RequestMapping("/api/v1/consumer/")
 @RequiredArgsConstructor
 @CrossOrigin
 public class ConsumerApi {
